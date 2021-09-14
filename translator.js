@@ -1,18 +1,16 @@
-
 // const translations = () =>{
-//     const english = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-//     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
-//     'y', 'z']
-//      for(let i=0; i< english.length; i++);
-
-//     const morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", 
-//     ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", ".-.",
-//     "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
-//      for(let j=0; j< english.length; j++); 
-// }
-
-// export 
-const morseCodeTranslations = {
+    //     const english = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+    //     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
+    //     'y', 'z']
+    //      for(let i=0; i< english.length; i++);
+    
+    //     const morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", 
+    //     ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", ".-.",
+    //     "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
+    //      for(let j=0; j< english.length; j++); 
+    // }
+    
+    export const morseCodeTranslations = {
     "A": ".-",
     "B": "-...",
     "C": "-.-.",
@@ -40,24 +38,23 @@ const morseCodeTranslations = {
     "Z": "--.."
 }
 
-    // function englishToMorse(eng){
-    //  const toString = eng.toString();
-    //  const toUpperCase = toString.toUpperCase();
-    //  const act = toUpperCase.split("").map(i =>{
-    //     return morseCodeTranslations[i] ? morseCodeTranslations[i] : i;
-    //    }).join("");
-    //}
+// export const englishToMorse = (eng) => {
+//     return eng
+//     .toUpperCase()
+//     .split("")
+//     .map(value =>{
+//         return morseCodeTranslations[value]
+//     })
+//     .join("");
+// }
 
-// export 
-function englishToMorse(eng){
-    return eng
-        .toString()
-        .toUpperCase()
-        .split("")
-        .map(i =>{
-            return morseCodeTranslations[i]
-        })
-        .join("");
-    ;}
-    
-// console.log(englishToMorse("sos"))
+export const englishToMorse = (eng) => {
+    let tran1 = eng.toUpperCase().split("")
+    let morseCodeArray = []
+    for(let i=0; i<tran1.length; i++){
+        let currentLetter = tran1[i]
+        morseCodeArray.push(morseCodeTranslations[currentLetter])
+    }
+    return morseCodeArray.join("");
+}
+

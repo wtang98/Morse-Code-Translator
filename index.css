@@ -1,0 +1,27 @@
+body h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30vh;
+}
+body .translate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .translate__input {
+  width: 400px;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+}
+body .translate__translated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
