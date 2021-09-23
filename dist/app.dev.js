@@ -8,7 +8,7 @@ var ans = document.querySelector(".translate__translated");
 translateBtn.addEventListener('click', function (event) {
   event.preventDefault();
   var returned = (0, _translator.englishToMorse)(input.value);
-  ans.innerHTML = returned;
+  ans.innerHTML = "".concat(input.value, ": ").concat(returned);
 }); // englishToTranslate.addEventListener("sumbit", event =>{
 //     event.preventDefault();
 // })

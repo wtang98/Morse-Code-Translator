@@ -4,16 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.englishToMorse = exports.morseCodeTranslations = void 0;
-// const translations = () =>{
-//     const english = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-//     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
-//     'y', 'z']
-//      for(let i=0; i< english.length; i++);
-//     const morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", 
-//     ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", ".-.",
-//     "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
-//      for(let j=0; j< english.length; j++); 
-// }
 var morseCodeTranslations = {
   "A": ".-",
   "B": "-...",
@@ -40,7 +30,8 @@ var morseCodeTranslations = {
   "X": "-..-",
   "Y": "-.--",
   "Z": "--.."
-}; // export const englishToMorse = (eng) => {
+}; //both work pick your poison
+// export const englishToMorse = (eng) => {
 //     return eng
 //     .toUpperCase()
 //     .split("")

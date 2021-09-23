@@ -7,7 +7,7 @@ const ans = document.querySelector(".translate__translated")
 translateBtn.addEventListener('click', event => {
     event.preventDefault();
     const returned = englishToMorse(input.value);
-    ans.innerHTML = returned;
+    ans.innerHTML = `${input.value}: ${returned}`;
 })
 
 

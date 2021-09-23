@@ -1,4 +1,5 @@
 body{
+    background-color: grey;
     h1{
         display: flex;
         justify-content: center;
@@ -11,6 +12,10 @@ body{
         align-items: center;
         &__input{
             width: 400px;
+            background-color: grey;
+        }
+        &__button{
+            background-color: grey;
         }
     }
     footer{

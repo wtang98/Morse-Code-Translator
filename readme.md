@@ -1,6 +1,8 @@
-you have an object.
-function takes a word and splits up into an array of single letters.
-itereate though with for/map to get the value of the key value pairing.
-join them up.
-push to line underneath
-do the dom stuff
+## Morse Code Translator
+This challenge was to create a morse code translator with JavaScript
+
+## Plan
+Create an object
+Create a function that splits the word by its individual letters
+Itereate though with for/map to get the value of the key value pairing and then join it up
+Use Dom manipulation to push translation to below
