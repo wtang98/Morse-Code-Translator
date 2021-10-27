@@ -5,31 +5,33 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.englishToMorse = exports.morseCodeTranslations = void 0;
 var morseCodeTranslations = {
-  "A": ".-",
-  "B": "-...",
-  "C": "-.-.",
-  "D": "-..",
-  "E": ".",
-  "F": "..-.",
-  "G": "--.",
-  "H": "....",
-  "I": "..",
-  "J": ".---",
-  "K": "-.-",
-  "L": ".-..",
-  "M": "--",
-  "N": "-.",
-  "O": "---",
-  "P": ".--.",
-  "Q": "--.-",
-  "R": ".-.",
-  "S": "...",
+  "A": ".- ",
+  "B": "-... ",
+  "C": "-.-. ",
+  "D": "-.. ",
+  "E": ". ",
+  "F": "..-. ",
+  "G": "--. ",
+  "H": ".... ",
+  "I": ".. ",
+  "J": ".--- ",
+  "K": "-.- ",
+  "L": ".-.. ",
+  "M": "-- ",
+  "N": "-. ",
+  "O": "--- ",
+  "P": ".--. ",
+  "Q": "--.- ",
+  "R": ".-. ",
+  "S": "... ",
   "T": "-",
-  "U": "..-",
-  "W": ".--",
-  "X": "-..-",
-  "Y": "-.--",
-  "Z": "--.."
+  "U": "..- ",
+  "V": "...- ",
+  "W": ".-- ",
+  "X": "-..- ",
+  "Y": "-.-- ",
+  "Z": "--.. ",
+  " ": "/"
 }; //both work pick your poison
 // export const englishToMorse = (eng) => {
 //     return eng
@@ -48,8 +50,7 @@ var englishToMorse = function englishToMorse(eng) {
   var morseCodeArray = [];
 
   for (var i = 0; i < tran1.length; i++) {
-    var currentLetter = tran1[i];
-    morseCodeArray.push(morseCodeTranslations[currentLetter]);
+    morseCodeArray.push(morseCodeTranslations[tran1[i]]);
   }
 
   return morseCodeArray.join("");

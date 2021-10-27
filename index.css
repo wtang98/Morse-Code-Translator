@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: lightgrey;
 }
 body h1 {
   display: flex;
@@ -9,15 +9,29 @@ body h1 {
 }
 body .translate {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 body .translate__input {
-  width: 400px;
-  background-color: grey;
+  margin: 10px;
+  height: 30px;
+  width: 500px;
+  border-radius: 15px;
+  background-color: lightgrey;
 }
 body .translate__button {
-  background-color: grey;
+  margin: 10px;
+  background-color: lightgrey;
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+}
+body .translate__translated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 body footer {
   display: flex;
@@ -26,9 +40,4 @@ body footer {
   position: absolute;
   bottom: 0;
   width: 99%;
-}
-body .translate__translated {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -9,8 +9,3 @@ translateBtn.addEventListener('click', event => {
     const returned = englishToMorse(input.value);
     ans.innerHTML = `${input.value}: ${returned}`;
 })
-
-
-// englishToTranslate.addEventListener("sumbit", event =>{
-//     event.preventDefault();
-// })

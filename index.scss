@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: lightgrey;
     h1{
         display: flex;
         justify-content: center;
@@ -8,14 +8,28 @@ body{
     }
     .translate{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         &__input{
-            width: 400px;
-            background-color: grey;
+            margin: 10px;
+            height: 30px;
+            width: 500px;
+            border-radius: 15px;
+            background-color: lightgrey;
         }
         &__button{
-            background-color: grey;
+            margin: 10px;
+            background-color: lightgrey;
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+        }
+        &__translated{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     }
     footer{
@@ -25,10 +39,5 @@ body{
         position: absolute;
         bottom: 0;
         width: 99%;
-    }
-    .translate__translated{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
